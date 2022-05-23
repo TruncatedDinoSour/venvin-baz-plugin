@@ -22,6 +22,8 @@ It's simple, just type `venv`, it will either:
 - Enter a venv if it exists
 - Exit a venv if you're in one
 
+`venv` also accepts optional arguments for virtualenv
+
 # Customisation
 
 - `PY3` -- The `python3` command

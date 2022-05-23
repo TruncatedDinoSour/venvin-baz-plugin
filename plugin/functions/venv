@@ -1,4 +1,6 @@
-[ "$VIRTUAL_ENV" ] && deactivate && return
-[ ! -d 'venv' ] && "${PY3:-python3}" -m virtualenv venv
+#!/usr/bin/env bash
 
-. ./venv/bin/activate
+[ "$VIRTUAL_ENV" ] && deactivate && return
+[ ! -d 'venv' ] &&
+    "${PY3:-python3}" -m virtualenv "$@" venv &&
+    . ./venv/bin/activate
